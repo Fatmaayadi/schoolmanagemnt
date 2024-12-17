@@ -16,8 +16,7 @@ void creerenseignant() {
   scanf("%s", E.numerodetel);
   printf("entrer la spécialité de l'enseignant");
   scanf("%s", E.spécialité);
-  fprintf(fp, "%d %s %s %s %s %s \n", E.id, E.nom, E.email, E.numerodetel,
-          E.spécialité);
+  fprintf(fp, "%d %s %s %s %s %s \n", E.id, E.nom,E.prenom, E.email, E.numerodetel,E.spécialité);
   printf("Enseignant ajouté!");
   fclose(fp);
 }
